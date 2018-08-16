@@ -1,0 +1,97 @@
+.project-container {
+    height:440px;
+    width: 450px;
+    margin: auto;
+}
+.fund-message {
+    width: 395px;
+    border-radius: .5em;
+    background-color: #cbe5fb;
+    padding: 10px 10px 10px 15px;
+    position: relative;
+    border-radius: .4em;
+    margin-bottom: 15px;
+    color: #6f6fe2;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.fund-message:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 13px solid transparent;
+    border-top-color: #cbe5fb;
+    border-bottom: 0;
+    margin-left: 165px;
+    margin-bottom: -12px;
+}
+.project-box {
+    height: 250px;
+    width: 364px;
+    background-color: #fff;
+    padding: 28px;
+    border-radius: .5em;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.11), 0 2px 4px 0 rgba(0,0,0,0.11);
+    overflow: hidden;
+}
+
+.project-box > h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size:1.5em;
+    
+}
+
+.project-box > p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.02em;
+    color: #555;
+    font-weight: 300;
+}
+.project-box > .dollarinput > input {
+    height: 30px;
+    width: 215px;
+    padding: 10px 10px 10px 26px;
+    border-radius: .3em 0 0 .3em;
+    font-size: 1.4em;
+    border-width: 1px;
+    border: 1px solid #ddd;
+    float: left;
+}
+.project-box > .dollarinput {
+position: relative;
+    background-color: #dedede;
+    display: inline;
+}
+.project-box > .dollarinput:before {
+    content: '$';
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    z-index: 1;
+    font-size: 1.4em;
+    color: #888;
+}
+.project-box > .dollarinput > button {
+    color: #fff;
+    height: 52px;
+    width: 110px;
+    background-color: #7bb98c;
+    font-size: 1.2em;
+    border-radius: 0 .3em .3em 0;
+    border: none;
+    float: left;
+}
+.project-box > progress{
+    -webkit-appearance: none;
+    background: #7bb98c; 
+    width: 116%;
+    position: relative;
+    top: -32px;
+    height: 13px;
+    left: -28px;
+}
+progress::-webkit-progress-bar { background: #a8ecbb; }
+progress::-webkit-progress-value { background: #7bb98c; }

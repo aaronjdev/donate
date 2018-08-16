@@ -1,0 +1,14 @@
+<div class="project-container">
+  <div class="fund-message"> 
+    <span> <strong><sup>$</sup>{{amountToGo}}</strong> still needed to fund this project</span>
+  </div>
+
+  <div class="project-box">
+      <progress max="100" value={{progress}}></progress>
+   <h3>Only four days left to fund this project</h3> 
+   <p>Join the <strong>{{donors}}</strong> other donors who have already supported this project.</p>
+    <div class="dollarinput">
+      <input placeholder="0" #donationBox/><button (click)="onGive(donationBox.value)">Give Now</button>
+    </div>
+  </div>
+</div>

@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { DonateBoxComponent } from './donate-box/donate-box.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DonateBoxComponent
   ],
   imports: [
     BrowserModule
