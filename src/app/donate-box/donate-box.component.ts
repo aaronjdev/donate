@@ -16,7 +16,7 @@ export class DonateBoxComponent implements OnInit {
   amountToGo: number = this.goal;
   donors: number = 0;
   progress:number = 0;
-
+  boxValue:string = '';
 
   onGive(value) {
     value = parseInt(value); 
@@ -27,8 +27,7 @@ export class DonateBoxComponent implements OnInit {
     }else{
       alert("donation is under $5");
     }
-
-  //lastly, clear the box
+    this.boxValue = null; 
   }
   checkAmount(amount){
     if(amount >=5){
