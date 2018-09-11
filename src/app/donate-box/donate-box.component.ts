@@ -16,18 +16,17 @@ export class DonateBoxComponent implements OnInit {
   amountToGo: number = this.goal;
   donors: number = 0;
   progress:number = 0;
-  boxValue:string = '';
+  boxValue:string = "0";
 
   onGive(value) {
     value = parseInt(value); 
     if(this.checkAmount(value)){
-      //console.log("hello " + value);
       this.handleDonation(value);
-
+      this.updateProgress();
     }else{
       alert("donation is under $5");
     }
-    this.boxValue = null; 
+    this.boxValue = "0"; 
   }
   checkAmount(amount){
     if(amount >=5){
@@ -41,9 +40,10 @@ export class DonateBoxComponent implements OnInit {
     this.totalDonated += value;
     this.amountToGo = this.goal-this.totalDonated;
     this.donors++;
-    this.progress = Math.round((this.totalDonated/5000) * 100);
-
   }
 
+  updateProgress(){
+    this.progress = Math.round((this.totalDonated/5000) * 100);
+  }
 
 }
