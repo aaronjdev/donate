@@ -1,3 +1,6 @@
+If you are using this to evaluate my code, please don't.  Some of this is old code or made for a very specific purpose and requires discussion. It not necessarily an example of production level code.
+
+
 # CrowdFund
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
